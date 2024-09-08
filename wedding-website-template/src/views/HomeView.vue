@@ -1,7 +1,5 @@
 <script setup></script>
 
 <template>
-  <main>
-    <button icon="home" />
-  </main>
+  <main></main>
 </template>
