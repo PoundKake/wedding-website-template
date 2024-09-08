@@ -11,6 +11,10 @@ const fgColor = '#356859'
 
 const items = [
   {
+    name: listItems.Home.title,
+    link: listItems.Home.link
+  },
+  {
     name: listItems.About.title,
     link: listItems.About.link
   }
