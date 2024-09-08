@@ -23,7 +23,11 @@
 </template>
 
 <style scoped>
-v-icon {
-  background-color: black;
+.bg {
+  background-color: #fffbe6 !important;
+}
+
+.text {
+  color: #356859 !important;
 }
 </style>
