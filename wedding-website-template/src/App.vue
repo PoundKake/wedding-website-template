@@ -1,8 +1,11 @@
-<script setup></script>
+<script setup>
+import { RouterView } from 'vue-router'
+</script>
 
 <template>
   <header></header>
-  <body>
+  <v-layout>
+    <!-- Main Application Content -->
     <v-container>
       <v-row>
         <v-col>
@@ -15,19 +18,12 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col> </v-col>
+        <v-col>
+          <router-view></router-view>
+        </v-col>
       </v-row>
     </v-container>
-  </body>
-  <v-icon icon="home"></v-icon>
+  </v-layout>
 </template>
 
-<style scoped>
-.bg {
-  background-color: #fffbe6 !important;
-}
-
-.text {
-  color: #356859 !important;
-}
-</style>
+<style scoped></style>
