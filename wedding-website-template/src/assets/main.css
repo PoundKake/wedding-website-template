@@ -1,10 +1,20 @@
-#app {
-  font-family: Didot !important;
-  display: flex;
+:root {
+  --bg-color: #fffbe6;
+  --fg-color: #356859;
 }
 
 html {
-  background-color: hsla(160, 100%, 37%, 0.2) !important;
+  font-family: Didot !important;
+  background-color: var(--bg-color) !important;
+  color: var(--fg-color) !important;
+}
+
+.bg {
+  background-color: #fffbe6;
+}
+
+.fc {
+  color: #356859;
 }
 
 /* #app { */
