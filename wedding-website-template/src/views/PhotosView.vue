@@ -1,5 +1,5 @@
 <script setup></script>
 
 <template>
-  <div>About</div>
+  <div>Photos Page Here</div>
 </template>

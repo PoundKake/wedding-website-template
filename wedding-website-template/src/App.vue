@@ -8,6 +8,7 @@ const tab = ref('Home')
 
 const bgColor = '#fffbe6'
 const fgColor = '#356859'
+const baseColor = '#71958a'
 
 const items = [
   {
@@ -17,6 +18,34 @@ const items = [
   {
     name: listItems.About.title,
     link: listItems.About.link
+  },
+  {
+    name: listItems.Photos.title,
+    link: listItems.Photos.link
+  },
+  {
+    name: listItems.Registry.title,
+    link: listItems.Registry.link
+  },
+  {
+    name: listItems.Rsvp.title,
+    link: listItems.Rsvp.link
+  },
+  {
+    name: listItems.Schedule.title,
+    link: listItems.Schedule.link
+  },
+  {
+    name: listItems.Cast.title,
+    link: listItems.Cast.link
+  },
+  {
+    name: listItems.ToDo.title,
+    link: listItems.ToDo.link
+  },
+  {
+    name: listItems.Travel.title,
+    link: listItems.Travel.link
   }
 ]
 </script>
@@ -48,7 +77,7 @@ const items = [
         <v-col>
           <v-card :color="bgColor" :elevation="0">
             <v-card-title class="text-center justify-center py-6">
-              <h1 class="text-h2 fc">Weddin Title</h1>
+              <h1 class="text-h2 fc">Wedding Title</h1>
             </v-card-title>
 
             <v-tabs v-model="tab" bg-color="transparent" :color="fgColor" grow>
@@ -58,6 +87,7 @@ const items = [
                 :text="item.name"
                 :value="item"
                 :to="item.link"
+                :base-color="baseColor"
               ></v-tab>
             </v-tabs>
 

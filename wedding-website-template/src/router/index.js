@@ -14,6 +14,62 @@ const routerRoutes = [
     // this generates a separate chunk (About.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import('../views/AboutView.vue')
+  },
+  {
+    path: '/photos',
+    name: 'photos',
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/PhotosView.vue')
+  },
+  {
+    path: '/registry',
+    name: 'registry',
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/RegistryView.vue')
+  },
+  {
+    path: '/rsvp',
+    name: 'rsvp',
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/RsvpView.vue')
+  },
+  {
+    path: '/schedule',
+    name: 'schedule',
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/ScheduleView.vue')
+  },
+  {
+    path: '/cast',
+    name: 'cast',
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/TheCastView.vue')
+  },
+  {
+    path: '/todo',
+    name: 'todo',
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/ThingsToDoView.vue')
+  },
+  {
+    path: '/travel',
+    name: 'travel',
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/TravelView.vue')
   }
 ]
 
