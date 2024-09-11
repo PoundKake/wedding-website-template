@@ -53,24 +53,24 @@ const items = [
 <template>
   <v-layout>
     <!-- Main Application Content -->
-    <v-container>
-      <v-row>
+    <v-container class="mx-auto">
+      <v-row class="my-1">
         <v-col>
           <v-card class="text-center justify-center" :color="bgColor" :elevation="0">
             decorative image here
           </v-card>
         </v-col>
       </v-row>
-      <v-row>
+      <v-row class="my-1">
         <v-col class="d-flex justify-center">
           <v-card :color="bgColor" :elevation="0">
-            <v-card-title class="text-center justify-center py-6">
+            <v-card-title class="text-center justify-center">
               <h1 class="text-h2 fc">Wedding Title</h1>
             </v-card-title>
           </v-card>
         </v-col>
       </v-row>
-      <v-row>
+      <v-row class="my-1">
         <v-col>
           <v-card class="d-flex justify-center" :color="bgColor" :elevation="0">
             <img src="https://loremflickr.com/200/200?random=2" />
@@ -78,7 +78,7 @@ const items = [
         </v-col>
       </v-row>
 
-      <v-row class="d-felx justify-center">
+      <v-row class="d-felx justify-center my-16 px-3 mx-3">
         <v-tabs v-model="tab" bg-color="transparent" :color="fgColor">
           <v-tab
             v-for="item in items"
@@ -87,14 +87,14 @@ const items = [
             :value="item"
             :to="item.link"
             :base-color="baseColor"
-            class="tabs-font"
+            class="tabs-font tabs-hover"
           ></v-tab>
         </v-tabs>
       </v-row>
-      <v-row class="d-flex justify-center my-20">
+      <v-row class="d-flex justify-center my-5 class-content">
         <v-tabs-window v-model="tab">
           <v-tabs-window-item v-for="item in items" :key="item" :value="item">
-            <v-card color="#fffbe6" flat>
+            <v-card color="#fffbe6" flat class="mx-16">
               <router-view></router-view>
             </v-card>
           </v-tabs-window-item>
@@ -110,6 +110,31 @@ const items = [
 }
 
 .tabs-font {
-  font-size: 5.25rem;
+  font-size: 10px;
+}
+
+#v-container {
+  min-width: 1024px;
+}
+
+#v-tabs {
+  min-width: 1024px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* .class-content { */
+/*   position: absolute; */
+/*   justify-content: center; */
+/* } */
+
+.tabs-hover {
+  transition: transform 0.2s;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.tabs-hover:hover {
+  transform: scale(1.25);
 }
 </style>
