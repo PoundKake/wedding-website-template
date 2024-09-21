@@ -87,7 +87,7 @@ const items = [
             :value="item"
             :to="item.link"
             :base-color="baseColor"
-            class="tabs-font tabs-hover"
+            class="tabs-font"
           ></v-tab>
         </v-tabs>
       </v-row>
@@ -115,26 +115,5 @@ const items = [
 
 #v-container {
   min-width: 1024px;
-}
-
-#v-tabs {
-  min-width: 1024px;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-/* .class-content { */
-/*   position: absolute; */
-/*   justify-content: center; */
-/* } */
-
-.tabs-hover {
-  transition: transform 0.2s;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.tabs-hover:hover {
-  transform: scale(1.25);
 }
 </style>
