@@ -1,5 +1,5 @@
 <script setup></script>
 
 <template>
-  <div>Travel</div>
+  <div>Travel new commit</div>
 </template>
