@@ -1,5 +1,5 @@
 <script setup></script>
 
 <template>
-  <div>Schedule here</div>
+  <div>Schedule here new commit</div>
 </template>
